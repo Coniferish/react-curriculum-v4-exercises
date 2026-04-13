@@ -1,0 +1,8 @@
+.header {
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  text-shadow: 0px 0px 2px turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
