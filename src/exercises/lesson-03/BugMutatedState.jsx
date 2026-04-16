@@ -13,8 +13,7 @@ export default function BugMutatedState() {
   let [count, setCount] = useState(0);
 
   function handleAdd() {
-    count++;
-    setCount(count);
+    setCount((count) => count + 1);
   }
 
   return (
@@ -26,4 +25,8 @@ export default function BugMutatedState() {
 }
 
 // Explanation:
-// (Write your explanation here)
+/*
+You need to let React manage the state for count instead of mutating it directly and
+using a function in the setter is safer because React will keep track of the current state
+of `count` and use the latest value. 
+*/
