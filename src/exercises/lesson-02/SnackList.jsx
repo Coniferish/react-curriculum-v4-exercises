@@ -8,9 +8,5 @@ export default function SnackList() {
     .toSorted((a, b) => {
       return a.rank - b.rank;
     })
-    .map((snack) => (
-      <ol key={snack.name}>
-        {snack.rank}) {snack.name}
-      </ol>
-    ));
+    .map((snack) => <li key={snack.name}>{snack.name}</li>);
 }
