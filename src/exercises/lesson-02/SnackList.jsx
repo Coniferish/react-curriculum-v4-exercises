@@ -1,0 +1,12 @@
+export default function SnackList() {
+  let snacks = [
+    { name: 'chips', rank: 3 },
+    { name: 'pretzels', rank: 2 },
+    { name: 'chocolate', rank: 1 },
+  ];
+  return snacks
+    .toSorted((a, b) => {
+      return a.rank - b.rank;
+    })
+    .map((snack) => <li key={snack.name}>{snack.name}</li>);
+}
