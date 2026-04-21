@@ -12,7 +12,7 @@ You’ll create four components, each in its own file in the folder correspondin
 Make sure your Vite development server is running!
 
 1. In your terminal, navigate to your project folder.
-2. In your terminal start your app by running the dev script:
+2. In your terminal start your app by running the dev script: `npm run dev`
 3. You should see something like:
    - `VITE v7.1.1  ready in 290 ms ➜  Local:   http://localhost:5173/`
 4. Woohoo! 🎉 You’ve successfully spun up your Vite app. Open the local URL in your browser to confirm it’s working.
@@ -30,6 +30,8 @@ Make sure your Vite development server is running!
      - Include at least **3–5** snacks.
    - **SnackFooter.jsx**
      - Default export a small component that returns a fun footer message.
+   - **SnackApp.jsx**
+     - Default export a component that contains the other components.
 
 2. Open this file:
    `src/exercises/lesson-02/studentWork.jsx`
