@@ -13,9 +13,7 @@ export default function SnackApp() {
       }}
     >
       <SnackHeader />
-      <ol>
-        <SnackList />
-      </ol>
+      <SnackList />
       <SnackFooter />
     </div>
   );

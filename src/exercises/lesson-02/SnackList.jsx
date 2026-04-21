@@ -4,9 +4,15 @@ export default function SnackList() {
     { name: 'pretzels', rank: 2 },
     { name: 'chocolate', rank: 1 },
   ];
-  return snacks
-    .toSorted((a, b) => {
-      return a.rank - b.rank;
-    })
-    .map((snack) => <li key={snack.name}>{snack.name}</li>);
+  return (
+    <ol>
+      {snacks
+        .toSorted((a, b) => {
+          return a.rank - b.rank;
+        })
+        .map((snack) => (
+          <li key={snack.name}>{snack.name}</li>
+        ))}
+    </ol>
+  );
 }
