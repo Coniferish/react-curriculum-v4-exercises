@@ -4,7 +4,6 @@
 export default function StudentWork() {
   //add variables here
   const name = 'John';
-  // eslint-disable-next-line
   const age = '33';
   const hobbies = ['drawing', 'dancing', 'exercising'];
   return (
@@ -13,10 +12,10 @@ export default function StudentWork() {
       {/* <p> Student output will go here </p> */}
       <h1>About John</h1>
       <p>
-        Hi! I&apos;m {name}. This is my first CTD course. I&apos;ve been working
-        primarily as a Python developer, though, for the past 3+ years and am
-        looking forward to doing more frontend work. Below are a few of my
-        hobbies.
+        Hi! I&apos;m {name}. I&apos;m {age}.This is my first CTD course.
+        I&apos;ve been working primarily as a Python developer, though, for the
+        past 3+ years and am looking forward to doing more frontend work. Below
+        are a few of my hobbies.
       </p>
       <ul>
         {hobbies.map((hobby, i) => (
